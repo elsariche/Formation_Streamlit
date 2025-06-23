@@ -52,7 +52,8 @@ if page == pages[1] :
   st.pyplot(fig)
 
   fig, ax = plt.subplots()
-  sns.heatmap(df.corr(), ax=ax)
+  cor = df.corr()
+  sns.heatmap(cor, ax=ax)
   st.write(fig)
 
 if page == pages[2] : 
